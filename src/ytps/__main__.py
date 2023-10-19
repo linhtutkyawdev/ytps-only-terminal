@@ -50,7 +50,7 @@ def ytps():
 						time.sleep(0.01)
 						progress.update(task1, advance=5)
 				try:
-					os.system(f'mpv --fullscreen --no-terminal --title="ytps - Playing {latest_video["result"][0]["title"]} from {latest_video["result"][0]["channel"]["name"]}"  {latest_video["result"][0]["link"]}')
+					os.system(f'mpv --no-video --title="ytps - Playing {latest_video["result"][0]["title"]} from {latest_video["result"][0]["channel"]["name"]}"  {latest_video["result"][0]["link"]}')
 				except:
 					webbrowser.open(f'https://www.youtube-nocookie.com/embed/{custom_play_search_content["result"][0]["id"]}')
 			quit()
@@ -98,7 +98,7 @@ def ytps():
 							time.sleep(0.01)
 							progress.update(task1, advance=5)
 					try:
-						os.system(f'mpv --fullscreen --no-terminal --title="ytps - Playing {video_info["title"]} from {video_info["channel"]["name"]}"  {video_info["link"]}')
+						os.system(f'mpv --no-video --title="ytps - Playing {video_info["title"]} from {video_info["channel"]["name"]}"  {video_info["link"]}')
 					except:
 						webbrowser.open(f'https://www.youtube-nocookie.com/embed/{video_info["id"]}')
 				if play_video == "w":
@@ -124,7 +124,7 @@ def ytps():
 						time.sleep(0.01)
 						progress.update(task1, advance=5)
 				try:
-					os.system(f'mpv --fullscreen --no-terminal --title="ytps - Playing {custom_play_search_content["result"][0]["title"]} from {custom_play_search_content["result"][0]["channel"]["name"]}"  {custom_play_search_content["result"][0]["link"]}')
+					os.system(f'mpv --no-video --title="ytps - Playing {custom_play_search_content["result"][0]["title"]} from {custom_play_search_content["result"][0]["channel"]["name"]}"  {custom_play_search_content["result"][0]["link"]}')
 				except:
 					webbrowser.open(f'https://www.youtube-nocookie.com/embed/{custom_play_search_content["result"][0]["id"]}')
 			if play_video == "w":
